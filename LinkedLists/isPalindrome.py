@@ -19,15 +19,13 @@ isListPalindrome(l) = false.
 #     self.next = None
 #
 def isListPalindrome(l):
-    list = []
+    li = []
     current = l
     if not current:
         return True
-    
     while current:
-        list.append(current.value)
+        li.append(current.value)
         current=current.next
-    list1 = list[:]
-    list.reverse()
-    return list == list1
+    li_reverse = li[::-1]
+    return li == li_reverse
 
